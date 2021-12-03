@@ -18,10 +18,10 @@ public class Usuario implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(length = 25, nullable=false)
+	@Column(name="username",length = 25, nullable=false)
 	private String username;
 	
-	@Column(length = 25, nullable=false)
+	@Column(name="password",length = 25, nullable=false)
 	private String password;
 	
 	public Long getId() {
